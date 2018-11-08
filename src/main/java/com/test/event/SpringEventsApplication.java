@@ -8,11 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @ComponentScan("com.test.*")
 @Configuration
 @EnableConfigurationProperties
+@EnableAsync
 public class SpringEventsApplication {
 	
 	private static TransactionEventPublisher publisher;
