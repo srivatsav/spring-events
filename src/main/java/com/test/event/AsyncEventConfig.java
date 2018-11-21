@@ -26,10 +26,10 @@ public class AsyncEventConfig {
 	
 	public Executor getAsyncExecutor() {
 		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-		executor.setCorePoolSize(1000);
-		executor.setMaxPoolSize(3000);
-		executor.setQueueCapacity(1000);
-		executor.setThreadNamePrefix("CAN -");
+		executor.setCorePoolSize(10);
+		executor.setMaxPoolSize(20);
+		executor.setQueueCapacity(10);
+		executor.setThreadNamePrefix("TEST -");
 		executor.initialize();
 		return executor;
 	}

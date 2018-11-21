@@ -9,6 +9,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class TransactionEventPublisher implements ApplicationEventPublisherAware{
 	
+	/**
+	 * ApplicationEventPublisher -> for handling events synchronously.
+	 */
 	ApplicationEventPublisher eventPublisher;
 	
 	/**
